@@ -1,3 +1,7 @@
-front_homepage:
+centre_medic_front_homepage:
     path:     /
     defaults: { _controller: FrontBundle:Default:index }
+centre_medic_llista_pacients:
+    path:     /llista_pacients
+    defaults: { _controller: FrontBundle:Pacients:llista }
+

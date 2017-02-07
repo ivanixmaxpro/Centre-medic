@@ -114,13 +114,21 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
             return array (  '_controller' => 'BackBundle\\Controller\\DefaultController::indexAction',  '_route' => 'back_homepage',);
         }
 
-        // front_homepage
-        if (rtrim($pathinfo, '/') === '/front') {
-            if (substr($pathinfo, -1) !== '/') {
-                return $this->redirect($pathinfo.'/', 'front_homepage');
+        if (0 === strpos($pathinfo, '/front')) {
+            // centre_medic_front_homepage
+            if (rtrim($pathinfo, '/') === '/front') {
+                if (substr($pathinfo, -1) !== '/') {
+                    return $this->redirect($pathinfo.'/', 'centre_medic_front_homepage');
+                }
+
+                return array (  '_controller' => 'FrontBundle\\Controller\\DefaultController::indexAction',  '_route' => 'centre_medic_front_homepage',);
             }
 
-            return array (  '_controller' => 'FrontBundle\\Controller\\DefaultController::indexAction',  '_route' => 'front_homepage',);
+            // centre_medic_llista_pacients
+            if ($pathinfo === '/front/llista_pacients') {
+                return array (  '_controller' => 'FrontBundle\\Controller\\PacientsController::llistaAction',  '_route' => 'centre_medic_llista_pacients',);
+            }
+
         }
 
         // homepage
