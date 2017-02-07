@@ -10,3 +10,5 @@ e4ed51,::1,GET,http://localhost/Centre-medic/web/app_dev.php/,1486395836,,200
 30205f,::1,GET,http://localhost/Centre-medic/web/app_dev.php/front/,1486477239,,200
 a7209a,::1,GET,http://localhost/Centre-medic/web/app_dev.php/back,1486477308,,301
 d20d20,::1,GET,http://localhost/Centre-medic/web/app_dev.php/back/,1486477309,,200
+90afe2,::1,GET,http://localhost/Centre-medic/web/app_dev.php/front/,1486479688,b0390c,200
+b0390c,::1,GET,http://localhost/Centre-medic/web/app_dev.php/front/,1486479688,,500
