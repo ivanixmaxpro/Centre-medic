@@ -6,3 +6,7 @@ ed619c,::1,GET,http://localhost/Centre-medic/web/app_dev.php/shop,1486393980,,40
 5bcac7,::1,GET,http://localhost/Centre-medic/web/app_dev.php/,1486393983,,200
 23df2c,::1,GET,http://localhost/Centre-medic/web/app_dev.php/,1486395240,,200
 e4ed51,::1,GET,http://localhost/Centre-medic/web/app_dev.php/,1486395836,,200
+8063cc,::1,GET,http://localhost/Centre-medic/web/app_dev.php/front,1486477238,,301
+30205f,::1,GET,http://localhost/Centre-medic/web/app_dev.php/front/,1486477239,,200
+a7209a,::1,GET,http://localhost/Centre-medic/web/app_dev.php/back,1486477308,,301
+d20d20,::1,GET,http://localhost/Centre-medic/web/app_dev.php/back/,1486477309,,200
