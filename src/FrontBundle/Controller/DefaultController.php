@@ -10,4 +10,8 @@ class DefaultController extends Controller
     {
         return $this->render('FrontBundle:Default:index.html.twig');
     }
+    public function loginAction()
+    {
+        return $this->render('FrontBundle:Default:login.html.twig');
+    }
 }

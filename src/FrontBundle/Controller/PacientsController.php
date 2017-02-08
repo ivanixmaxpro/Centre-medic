@@ -6,7 +6,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
 class PacientsController extends Controller
 {
-    public function llistaAction()
+    public function llistaPacientsAction()
     {
         return $this->render('FrontBundle:Default:pacients.html.twig');
     }

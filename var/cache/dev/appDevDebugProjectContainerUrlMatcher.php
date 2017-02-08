@@ -124,9 +124,30 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
                 return array (  '_controller' => 'FrontBundle\\Controller\\DefaultController::indexAction',  '_route' => 'centre_medic_front_homepage',);
             }
 
-            // centre_medic_llista_pacients
-            if ($pathinfo === '/front/llista_pacients') {
-                return array (  '_controller' => 'FrontBundle\\Controller\\PacientsController::llistaAction',  '_route' => 'centre_medic_llista_pacients',);
+            if (0 === strpos($pathinfo, '/front/l')) {
+                // centre_medic_front_login
+                if ($pathinfo === '/front/login') {
+                    return array (  '_controller' => 'FrontBundle\\Controller\\DefaultController::loginAction',  '_route' => 'centre_medic_front_login',);
+                }
+
+                if (0 === strpos($pathinfo, '/front/llista_')) {
+                    // centre_medic_llista_pacients
+                    if ($pathinfo === '/front/llista_pacients') {
+                        return array (  '_controller' => 'FrontBundle\\Controller\\PacientsController::llistaPacientsAction',  '_route' => 'centre_medic_llista_pacients',);
+                    }
+
+                    // centre_medic_llista_metges
+                    if ($pathinfo === '/front/llista_metges') {
+                        return array (  '_controller' => 'FrontBundle\\Controller\\MetgesController::llistaMetgesAction',  '_route' => 'centre_medic_llista_metges',);
+                    }
+
+                    // centre_medic_llista_visites
+                    if ($pathinfo === '/front/llista_visites') {
+                        return array (  '_controller' => 'FrontBundle\\Controller\\VisitesController::llistaVisitesAction',  '_route' => 'centre_medic_llista_visites',);
+                    }
+
+                }
+
             }
 
         }
