@@ -1,12 +1,20 @@
 {% extends "FrontBundle:Default:index.html.twig " %}
-{% block title %}Metges{% endblock %}
+{% block title %}Pacients{% endblock %}
 {% block page_content %}
     <!-- Page Content -->
-    <div class="container">
+	    <div class="container">
         <div class="row">
             <div class="col-sm-12 col-lg-12 col-md-12">
-                <h1>Llista metges</h1>
-                <p>aqui anira la seccio de metges, es podra seleccionar per especialitat</p>
+                <h1>Pacients</h1>
+                <p>aqui anira la seccio de llista pacients</p>
+                <table border="1">
+                {% for metge in metges %}
+                <tr>
+                	<td>{{ metge.id }}</td>
+        			<td>{{ metge.especialitat }}</td>
+        		</tr>
+				{% endfor %}
+				</table>
             </div>
         </div>
     </div>

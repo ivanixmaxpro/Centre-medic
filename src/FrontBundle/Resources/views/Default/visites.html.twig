@@ -7,6 +7,14 @@
             <div class="col-sm-12 col-lg-12 col-md-12">
                 <h1>Visites</h1>
                 <p>aqui anira la seccio de llista de visites</p>
+                 <table border="1">
+                {% for visita in visites %}
+                <tr>
+                	<td>{{ visita.id }}</td>
+        			<td>{{ visita.data }}</td>
+        		</tr>
+				{% endfor %}
+				</table>
             </div>
         </div>
     </div>

@@ -6,8 +6,10 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
 class MetgesController extends Controller
 {
-    public function llistaMetgesAction()
+    
+     public function llistaMetgesAction()
     {
-        return $this->render('FrontBundle:Default:metges.html.twig');
+    	$metges = $this->getDoctrine()->getRepository('FrontBundle:Metge')->findAll();
+        return $this->render('FrontBundle:Default:metges.html.twig',array('metges' => $metges));
     }
 }

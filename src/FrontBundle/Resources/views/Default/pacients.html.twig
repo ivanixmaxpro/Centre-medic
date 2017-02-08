@@ -2,11 +2,19 @@
 {% block title %}Pacients{% endblock %}
 {% block page_content %}
     <!-- Page Content -->
-    <div class="container">
+	    <div class="container">
         <div class="row">
             <div class="col-sm-12 col-lg-12 col-md-12">
                 <h1>Pacients</h1>
                 <p>aqui anira la seccio de llista pacients</p>
+                <table border="1">
+                {% for pacient in pacients %}
+                <tr>
+                	<td>{{ pacient.id }}</td>
+        			<td>{{ pacient.dolencia }}</td>
+        		</tr>
+				{% endfor %}
+				</table>
             </div>
         </div>
     </div>
