@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 07-02-2017 a las 16:03:46
+-- Tiempo de generación: 08-02-2017 a las 17:12:08
 -- Versión del servidor: 10.1.19-MariaDB
 -- Versión de PHP: 7.0.13
 
@@ -32,6 +32,13 @@ CREATE TABLE `centre_medic` (
   `codi` varchar(255) COLLATE utf8_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
+--
+-- Volcado de datos para la tabla `centre_medic`
+--
+
+INSERT INTO `centre_medic` (`id`, `nom`, `codi`) VALUES
+(1, 'Vallbonva Centre Medic', '0000000000001');
+
 -- --------------------------------------------------------
 
 --
@@ -43,6 +50,14 @@ CREATE TABLE `metge` (
   `especialitat` varchar(255) COLLATE utf8_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
+--
+-- Volcado de datos para la tabla `metge`
+--
+
+INSERT INTO `metge` (`id`, `especialitat`) VALUES
+(1, 'Osteopata'),
+(2, 'Oncoleg');
+
 -- --------------------------------------------------------
 
 --
@@ -53,6 +68,14 @@ CREATE TABLE `pacient` (
   `id` int(11) NOT NULL,
   `dolencia` varchar(255) COLLATE utf8_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Volcado de datos para la tabla `pacient`
+--
+
+INSERT INTO `pacient` (`id`, `dolencia`) VALUES
+(1, 'Em fa mal el braç esquerra.'),
+(2, 'Estic refredat.');
 
 -- --------------------------------------------------------
 
@@ -67,6 +90,16 @@ CREATE TABLE `persona` (
   `dni` varchar(255) COLLATE utf8_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
+--
+-- Volcado de datos para la tabla `persona`
+--
+
+INSERT INTO `persona` (`id`, `nom`, `cognom`, `dni`) VALUES
+(1, 'José', 'Albarez', '47954789B'),
+(2, 'Ivan', 'Mir', '47921569A'),
+(3, 'Ernest', 'Riccetto', '8798797B'),
+(4, 'Dani', 'Fernandez', '7894561A');
+
 -- --------------------------------------------------------
 
 --
@@ -77,6 +110,13 @@ CREATE TABLE `visita` (
   `id` int(11) NOT NULL,
   `data` varchar(255) COLLATE utf8_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Volcado de datos para la tabla `visita`
+--
+
+INSERT INTO `visita` (`id`, `data`) VALUES
+(1, '08/02/2017');
 
 --
 -- Índices para tablas volcadas
@@ -122,27 +162,27 @@ ALTER TABLE `visita`
 -- AUTO_INCREMENT de la tabla `centre_medic`
 --
 ALTER TABLE `centre_medic`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT de la tabla `metge`
 --
 ALTER TABLE `metge`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT de la tabla `pacient`
 --
 ALTER TABLE `pacient`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT de la tabla `persona`
 --
 ALTER TABLE `persona`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT de la tabla `visita`
 --
 ALTER TABLE `visita`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
