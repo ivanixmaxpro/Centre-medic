@@ -98,3 +98,8 @@ c3c66d,::1,GET,http://localhost/Centre-medic/web/app_dev.php/front/login,1486569
 b8dfdf,::1,GET,http://localhost/Centre-medic/web/app_dev.php/front/llista_metges,1486569502,,200
 9872f2,::1,GET,http://localhost/Centre-medic/web/app_dev.php/front/llista_pacients,1486569505,,200
 b7a8c7,::1,GET,http://localhost/Centre-medic/web/app_dev.php/front/llista_visites,1486569506,,200
+428120,::1,GET,http://localhost/Centre-medic/web/app_dev.php/front/,1486570258,,200
+38f43a,::1,GET,http://localhost/Centre-medic/web/app_dev.php/front/llista_metges,1486570263,,200
+9bd0f9,::1,GET,http://localhost/Centre-medic/web/app_dev.php/front/llista_pacients,1486570264,,200
+990728,::1,GET,http://localhost/Centre-medic/web/app_dev.php/front/llista_visites,1486570265,,200
+8d1bd1,::1,GET,http://localhost/Centre-medic/web/app_dev.php/front/login,1486570266,,200
