@@ -150,3 +150,8 @@ d54a0c,::1,GET,http://localhost/Centre-medic/web/app_dev.php/front/llista_metges
 c24bd3,::1,GET,http://localhost/Centre-medic/web/app_dev.php/front/llista_metges,1486572685,,200
 14fb18,::1,GET,http://localhost/Centre-medic/web/app_dev.php/front/llista_pacients,1486572685,,200
 0bf6f0,::1,GET,http://localhost/Centre-medic/web/app_dev.php/front/llista_visites,1486572686,,200
+0255ee,::1,GET,http://localhost/Centre-medic/web/app_dev.php/front/llista_metges,1487082732,,200
+9e0fb3,::1,GET,http://localhost/Centre-medic/web/app_dev.php/front/llista_visites,1487082738,,200
+6d53ad,::1,GET,http://localhost/Centre-medic/web/app_dev.php/front/llista_pacients,1487082740,,200
+0d6eda,::1,GET,http://localhost/Centre-medic/web/app_dev.php/front/llista_metges,1487082745,,200
+d72bc6,::1,GET,http://localhost/Centre-medic/web/app_dev.php/front/llista_visites,1487082753,,200

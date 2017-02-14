@@ -2,36 +2,40 @@
 
 namespace FrontBundle\Entity;
 
+use Doctrine\ORM\Mapping as ORM;
+
 /**
  * CentreMedic
+ *
+ * @ORM\Table(name="centre_medic", uniqueConstraints={@ORM\UniqueConstraint(name="UNIQ_EFD89C477EA37CB3", columns={"codi"})})
+ * @ORM\Entity
  */
 class CentreMedic
 {
     /**
-     * @var int
-     */
-    private $id;
-
-    /**
      * @var string
+     *
+     * @ORM\Column(name="nom", type="string", length=255, nullable=false)
      */
     private $nom;
 
     /**
      * @var string
+     *
+     * @ORM\Column(name="codi", type="string", length=255, nullable=false)
      */
     private $codi;
 
-
     /**
-     * Get id
+     * @var integer
      *
-     * @return int
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
      */
-    public function getId()
-    {
-        return $this->id;
-    }
+    private $id;
+
+
 
     /**
      * Set nom
@@ -80,5 +84,14 @@ class CentreMedic
     {
         return $this->codi;
     }
-}
 
+    /**
+     * Get id
+     *
+     * @return integer
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+}
