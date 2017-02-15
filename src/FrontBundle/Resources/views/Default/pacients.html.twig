@@ -8,12 +8,15 @@
                 <h1>Pacients</h1>
                 <p>Llistat de pacients:</p>
                 <table class="table table-hover">
-                <th>ID</th>
+                <th>nom</th>
+                <th>cognom</th>
+                <th>dni</th>
                 <th>Dolencia</th>
                 {% for pacient in pacients %}
-               
                 <tr>
-                	<td>{{ pacient.id }}</td>
+                	<td>{{ pacient.nom }}</td>
+                    <td>{{ pacient.cognom }}</td>
+                    <td>{{ pacient.dni|upper }}</td>
         			<td>{{ pacient.dolencia }}</td>
         		</tr>
 				{% endfor %}

@@ -12,7 +12,7 @@ class PacientsController extends Controller
     }
     public function llistaPacientsAction()
     {
-    	$pacients = $this->getDoctrine()->getRepository('FrontBundle:Pacient')->findAll();
+    	$pacients = $this->getDoctrine()->getRepository('FrontBundle:Pacients')->findAll();
         return $this->render('FrontBundle:Default:pacients.html.twig',array('pacients' => $pacients));
     }
 }

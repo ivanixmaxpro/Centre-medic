@@ -5,60 +5,51 @@ namespace FrontBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * Persona
+ * Pacients
  *
- * @ORM\Table(name="persona")
- * @ORM\Entity(repositoryClass="FrontBundle\Repository\PersonaRepository")
+ * @ORM\Table(name="pacients", indexes={@ORM\Index(name="dni", columns={"dni"})})
+ * @ORM\Entity
  */
-class Persona
+class Pacients
 {
-    /**
-     * @var int
-     *
-     * @ORM\Column(name="id", type="integer")
-     * @ORM\Id
-     * @ORM\GeneratedValue(strategy="AUTO")
-     */
-    private $id;
-
     /**
      * @var string
      *
-     * @ORM\Column(name="nom", type="string", length=255)
+     * @ORM\Column(name="nom", type="string", length=25, nullable=false)
      */
     private $nom;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="cognom", type="string", length=255)
+     * @ORM\Column(name="cognom", type="string", length=25, nullable=false)
      */
     private $cognom;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="dni", type="string", length=255, unique=true)
+     * @ORM\Column(name="dolencia", type="string", length=255, nullable=false)
+     */
+    private $dolencia;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="dni", type="string", length=25)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
      */
     private $dni;
 
 
-    /**
-     * Get id
-     *
-     * @return int
-     */
-    public function getId()
-    {
-        return $this->id;
-    }
 
     /**
      * Set nom
      *
      * @param string $nom
      *
-     * @return Persona
+     * @return Pacients
      */
     public function setNom($nom)
     {
@@ -82,7 +73,7 @@ class Persona
      *
      * @param string $cognom
      *
-     * @return Persona
+     * @return Pacients
      */
     public function setCognom($cognom)
     {
@@ -102,17 +93,27 @@ class Persona
     }
 
     /**
-     * Set dni
+     * Set dolencia
      *
-     * @param string $dni
+     * @param string $dolencia
      *
-     * @return Persona
+     * @return Pacients
      */
-    public function setDni($dni)
+    public function setDolencia($dolencia)
     {
-        $this->dni = $dni;
+        $this->dolencia = $dolencia;
 
         return $this;
+    }
+
+    /**
+     * Get dolencia
+     *
+     * @return string
+     */
+    public function getDolencia()
+    {
+        return $this->dolencia;
     }
 
     /**
@@ -125,4 +126,3 @@ class Persona
         return $this->dni;
     }
 }
-

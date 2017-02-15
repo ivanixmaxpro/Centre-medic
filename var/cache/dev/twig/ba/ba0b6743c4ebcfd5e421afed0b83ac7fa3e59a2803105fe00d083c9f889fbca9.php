@@ -22,47 +22,47 @@ class __TwigTemplate_8927a73135c5160c7bbbb34d3b5a581aa20095be66955b380210d481bb3
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_e6c2ad0ebae62bc8f535f8c90a1c365f8b26908455122b5c3797978fe450f1d2 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_e6c2ad0ebae62bc8f535f8c90a1c365f8b26908455122b5c3797978fe450f1d2->enter($__internal_e6c2ad0ebae62bc8f535f8c90a1c365f8b26908455122b5c3797978fe450f1d2_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "FrontBundle:Default:visites.html.twig"));
+        $__internal_e4d29e7a91271ee97b44e80e547e1b208650cf43ba830dd55acb499018ab377a = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_e4d29e7a91271ee97b44e80e547e1b208650cf43ba830dd55acb499018ab377a->enter($__internal_e4d29e7a91271ee97b44e80e547e1b208650cf43ba830dd55acb499018ab377a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "FrontBundle:Default:visites.html.twig"));
 
-        $__internal_056d350894d1feb227b85590dfe1ab9e5a8746cf078d95a24559393bb0e0ac2b = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_056d350894d1feb227b85590dfe1ab9e5a8746cf078d95a24559393bb0e0ac2b->enter($__internal_056d350894d1feb227b85590dfe1ab9e5a8746cf078d95a24559393bb0e0ac2b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "FrontBundle:Default:visites.html.twig"));
+        $__internal_13617cacf7e4bf4ac513cfa92d0d259d660e9e6c0f109d9bb6ca40d4b387ff60 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_13617cacf7e4bf4ac513cfa92d0d259d660e9e6c0f109d9bb6ca40d4b387ff60->enter($__internal_13617cacf7e4bf4ac513cfa92d0d259d660e9e6c0f109d9bb6ca40d4b387ff60_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "FrontBundle:Default:visites.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_e6c2ad0ebae62bc8f535f8c90a1c365f8b26908455122b5c3797978fe450f1d2->leave($__internal_e6c2ad0ebae62bc8f535f8c90a1c365f8b26908455122b5c3797978fe450f1d2_prof);
+        $__internal_e4d29e7a91271ee97b44e80e547e1b208650cf43ba830dd55acb499018ab377a->leave($__internal_e4d29e7a91271ee97b44e80e547e1b208650cf43ba830dd55acb499018ab377a_prof);
 
         
-        $__internal_056d350894d1feb227b85590dfe1ab9e5a8746cf078d95a24559393bb0e0ac2b->leave($__internal_056d350894d1feb227b85590dfe1ab9e5a8746cf078d95a24559393bb0e0ac2b_prof);
+        $__internal_13617cacf7e4bf4ac513cfa92d0d259d660e9e6c0f109d9bb6ca40d4b387ff60->leave($__internal_13617cacf7e4bf4ac513cfa92d0d259d660e9e6c0f109d9bb6ca40d4b387ff60_prof);
 
     }
 
     // line 2
     public function block_title($context, array $blocks = array())
     {
-        $__internal_94c63867a13c3decc6b03187f97fe895051f77a2cf5753db3d8b03165e6ee3f4 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_94c63867a13c3decc6b03187f97fe895051f77a2cf5753db3d8b03165e6ee3f4->enter($__internal_94c63867a13c3decc6b03187f97fe895051f77a2cf5753db3d8b03165e6ee3f4_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_3862a02d6bc733e830282e8e247bbce8ef0e62d2653b296658087bbd18654b6f = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_3862a02d6bc733e830282e8e247bbce8ef0e62d2653b296658087bbd18654b6f->enter($__internal_3862a02d6bc733e830282e8e247bbce8ef0e62d2653b296658087bbd18654b6f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
-        $__internal_fcdafc61abe4f09ecc5e84903d52ba4b4e35f27f4fc58ec6c1f5eb7e9d7e948e = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_fcdafc61abe4f09ecc5e84903d52ba4b4e35f27f4fc58ec6c1f5eb7e9d7e948e->enter($__internal_fcdafc61abe4f09ecc5e84903d52ba4b4e35f27f4fc58ec6c1f5eb7e9d7e948e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_06646ae32184af789ce017b2370f76809fcab35f1d301c67d281ea8dd11eb277 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_06646ae32184af789ce017b2370f76809fcab35f1d301c67d281ea8dd11eb277->enter($__internal_06646ae32184af789ce017b2370f76809fcab35f1d301c67d281ea8dd11eb277_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
         echo "Visites";
         
-        $__internal_fcdafc61abe4f09ecc5e84903d52ba4b4e35f27f4fc58ec6c1f5eb7e9d7e948e->leave($__internal_fcdafc61abe4f09ecc5e84903d52ba4b4e35f27f4fc58ec6c1f5eb7e9d7e948e_prof);
+        $__internal_06646ae32184af789ce017b2370f76809fcab35f1d301c67d281ea8dd11eb277->leave($__internal_06646ae32184af789ce017b2370f76809fcab35f1d301c67d281ea8dd11eb277_prof);
 
         
-        $__internal_94c63867a13c3decc6b03187f97fe895051f77a2cf5753db3d8b03165e6ee3f4->leave($__internal_94c63867a13c3decc6b03187f97fe895051f77a2cf5753db3d8b03165e6ee3f4_prof);
+        $__internal_3862a02d6bc733e830282e8e247bbce8ef0e62d2653b296658087bbd18654b6f->leave($__internal_3862a02d6bc733e830282e8e247bbce8ef0e62d2653b296658087bbd18654b6f_prof);
 
     }
 
     // line 3
     public function block_page_content($context, array $blocks = array())
     {
-        $__internal_d0c9cb81b7f5f0661e5eb1529cc9b8e5db7a3b60b9ed0c135037f8b4dbda4ac2 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_d0c9cb81b7f5f0661e5eb1529cc9b8e5db7a3b60b9ed0c135037f8b4dbda4ac2->enter($__internal_d0c9cb81b7f5f0661e5eb1529cc9b8e5db7a3b60b9ed0c135037f8b4dbda4ac2_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "page_content"));
+        $__internal_6a47fdc9c4a915827f81201a48af9c0623b20b28c63653173c1a0fb998d4e24c = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_6a47fdc9c4a915827f81201a48af9c0623b20b28c63653173c1a0fb998d4e24c->enter($__internal_6a47fdc9c4a915827f81201a48af9c0623b20b28c63653173c1a0fb998d4e24c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "page_content"));
 
-        $__internal_4a3098bf151e2a5b664bd0a60851d8b32e363287982ad58f06c6be02ad7cae8a = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_4a3098bf151e2a5b664bd0a60851d8b32e363287982ad58f06c6be02ad7cae8a->enter($__internal_4a3098bf151e2a5b664bd0a60851d8b32e363287982ad58f06c6be02ad7cae8a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "page_content"));
+        $__internal_de236b1179e3bb9556f3f79a3be5f484057c57df2dcc8f182fbca4e7da475598 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_de236b1179e3bb9556f3f79a3be5f484057c57df2dcc8f182fbca4e7da475598->enter($__internal_de236b1179e3bb9556f3f79a3be5f484057c57df2dcc8f182fbca4e7da475598_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "page_content"));
 
         // line 4
         echo "    <!-- Page Content -->
@@ -72,22 +72,36 @@ class __TwigTemplate_8927a73135c5160c7bbbb34d3b5a581aa20095be66955b380210d481bb3
                 <h1>Visites</h1>
                 <p>Llistat de visites:</p>
                 <table class=\"table table-hover\">
-                <th>ID</th>
                 <th>Data</th>
+                <th>tractament</th>
+                <th>Metge que atén</th>
+                <th>Pacient atés</th>
                 ";
-        // line 13
+        // line 15
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable(($context["visites"] ?? $this->getContext($context, "visites")));
         foreach ($context['_seq'] as $context["_key"] => $context["visita"]) {
-            // line 14
+            // line 16
             echo "                <tr>
                 \t<td>";
-            // line 15
-            echo twig_escape_filter($this->env, $this->getAttribute($context["visita"], "id", array()), "html", null, true);
+            // line 17
+            echo twig_escape_filter($this->env, twig_date_format_filter($this->env, $this->getAttribute($context["visita"], "data", array()), "m/d/Y"), "html", null, true);
             echo "</td>
         \t\t\t<td>";
-            // line 16
-            echo twig_escape_filter($this->env, $this->getAttribute($context["visita"], "data", array()), "html", null, true);
+            // line 18
+            echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($context["visita"], "tractamentsFk", array()), "tipus", array()), "html", null, true);
+            echo "</td>
+                    <td>";
+            // line 19
+            echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($context["visita"], "metgesFk", array()), "nom", array()), "html", null, true);
+            echo "</td>
+                    <td>";
+            // line 20
+            echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($context["visita"], "pacientsFk", array()), "nom", array()), "html", null, true);
+            echo ", ";
+            echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($context["visita"], "pacientsFk", array()), "cognom", array()), "html", null, true);
+            echo " amb DNI: ";
+            echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($context["visita"], "pacientsFk", array()), "dni", array()), "html", null, true);
             echo "</td>
         \t\t</tr>
 \t\t\t\t";
@@ -95,17 +109,17 @@ class __TwigTemplate_8927a73135c5160c7bbbb34d3b5a581aa20095be66955b380210d481bb3
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['visita'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 19
+        // line 23
         echo "\t\t\t\t</table>
             </div>
         </div>
     </div>
 ";
         
-        $__internal_4a3098bf151e2a5b664bd0a60851d8b32e363287982ad58f06c6be02ad7cae8a->leave($__internal_4a3098bf151e2a5b664bd0a60851d8b32e363287982ad58f06c6be02ad7cae8a_prof);
+        $__internal_de236b1179e3bb9556f3f79a3be5f484057c57df2dcc8f182fbca4e7da475598->leave($__internal_de236b1179e3bb9556f3f79a3be5f484057c57df2dcc8f182fbca4e7da475598_prof);
 
         
-        $__internal_d0c9cb81b7f5f0661e5eb1529cc9b8e5db7a3b60b9ed0c135037f8b4dbda4ac2->leave($__internal_d0c9cb81b7f5f0661e5eb1529cc9b8e5db7a3b60b9ed0c135037f8b4dbda4ac2_prof);
+        $__internal_6a47fdc9c4a915827f81201a48af9c0623b20b28c63653173c1a0fb998d4e24c->leave($__internal_6a47fdc9c4a915827f81201a48af9c0623b20b28c63653173c1a0fb998d4e24c_prof);
 
     }
 
@@ -121,7 +135,7 @@ class __TwigTemplate_8927a73135c5160c7bbbb34d3b5a581aa20095be66955b380210d481bb3
 
     public function getDebugInfo()
     {
-        return array (  99 => 19,  90 => 16,  86 => 15,  83 => 14,  79 => 13,  68 => 4,  59 => 3,  41 => 2,  11 => 1,);
+        return array (  113 => 23,  100 => 20,  96 => 19,  92 => 18,  88 => 17,  85 => 16,  81 => 15,  68 => 4,  59 => 3,  41 => 2,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -144,12 +158,16 @@ class __TwigTemplate_8927a73135c5160c7bbbb34d3b5a581aa20095be66955b380210d481bb3
                 <h1>Visites</h1>
                 <p>Llistat de visites:</p>
                 <table class=\"table table-hover\">
-                <th>ID</th>
                 <th>Data</th>
+                <th>tractament</th>
+                <th>Metge que atén</th>
+                <th>Pacient atés</th>
                 {% for visita in visites %}
                 <tr>
-                \t<td>{{ visita.id }}</td>
-        \t\t\t<td>{{ visita.data }}</td>
+                \t<td>{{ visita.data|date(\"m/d/Y\") }}</td>
+        \t\t\t<td>{{ visita.tractamentsFk.tipus }}</td>
+                    <td>{{ visita.metgesFk.nom}}</td>
+                    <td>{{ visita.pacientsFk.nom}}, {{ visita.pacientsFk.cognom}} amb DNI: {{ visita.pacientsFk.dni }}</td>
         \t\t</tr>
 \t\t\t\t{% endfor %}
 \t\t\t\t</table>

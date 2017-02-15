@@ -8,12 +8,16 @@
                 <h1>Metges</h1>
                 <p>Llistat de metges:</p>
                 <table class="table table-hover">
-                <th>ID</th>
+                <th>Nom</th>
+                <th>Cognom</th>
+                <th>Dni</th>
                 <th>Especialitat</th>
                 {% for metge in metges %}
                 <tr>
-                	<td>{{ metge.id }}</td>
-        			<td>{{ metge.especialitat }}</td>
+                	<td>{{ metge.nom }}</td>
+                    <td>{{ metge.cognom }}</td>
+                    <td>{{ metge.dni|upper }}</td>
+                    <td>{{ metge.especialitat }}</td>
         		</tr>
 				{% endfor %}
 				</table>

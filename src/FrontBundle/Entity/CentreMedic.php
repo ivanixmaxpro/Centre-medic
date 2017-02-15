@@ -7,7 +7,7 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * CentreMedic
  *
- * @ORM\Table(name="centre_medic", uniqueConstraints={@ORM\UniqueConstraint(name="UNIQ_EFD89C477EA37CB3", columns={"codi"})})
+ * @ORM\Table(name="centre-medic")
  * @ORM\Entity
  */
 class CentreMedic
@@ -20,20 +20,13 @@ class CentreMedic
     private $nom;
 
     /**
-     * @var string
-     *
-     * @ORM\Column(name="codi", type="string", length=255, nullable=false)
-     */
-    private $codi;
-
-    /**
      * @var integer
      *
-     * @ORM\Column(name="id", type="integer")
+     * @ORM\Column(name="codi", type="integer")
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="IDENTITY")
      */
-    private $id;
+    private $codi;
 
 
 
@@ -62,36 +55,12 @@ class CentreMedic
     }
 
     /**
-     * Set codi
-     *
-     * @param string $codi
-     *
-     * @return CentreMedic
-     */
-    public function setCodi($codi)
-    {
-        $this->codi = $codi;
-
-        return $this;
-    }
-
-    /**
      * Get codi
      *
-     * @return string
+     * @return integer
      */
     public function getCodi()
     {
         return $this->codi;
-    }
-
-    /**
-     * Get id
-     *
-     * @return integer
-     */
-    public function getId()
-    {
-        return $this->id;
     }
 }

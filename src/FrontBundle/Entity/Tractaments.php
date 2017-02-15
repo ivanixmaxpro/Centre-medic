@@ -7,7 +7,7 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * Tractaments
  *
- * @ORM\Table(name="tractaments", uniqueConstraints={@ORM\UniqueConstraint(name="id", columns={"id"})})
+ * @ORM\Table(name="tractaments", indexes={@ORM\Index(name="id", columns={"id"})})
  * @ORM\Entity
  */
 class Tractaments
@@ -22,7 +22,7 @@ class Tractaments
     /**
      * @var integer
      *
-     * @ORM\Column(name="id", type="bigint")
+     * @ORM\Column(name="id", type="integer")
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="IDENTITY")
      */

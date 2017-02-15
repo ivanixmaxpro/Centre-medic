@@ -5,12 +5,12 @@ namespace FrontBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * Metge
+ * Metges
  *
- * @ORM\Table(name="metge")
+ * @ORM\Table(name="metges", indexes={@ORM\Index(name="dni", columns={"dni"})})
  * @ORM\Entity
  */
-class Metge
+class Metges
 {
     /**
      * @var string

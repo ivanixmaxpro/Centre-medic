@@ -8,12 +8,16 @@
                 <h1>Visites</h1>
                 <p>Llistat de visites:</p>
                 <table class="table table-hover">
-                <th>ID</th>
                 <th>Data</th>
+                <th>tractament</th>
+                <th>Metge que atén</th>
+                <th>Pacient atés</th>
                 {% for visita in visites %}
                 <tr>
-                	<td>{{ visita.id }}</td>
-        			<td>{{ visita.data }}</td>
+                	<td>{{ visita.data|date("m/d/Y") }}</td>
+        			<td>{{ visita.tractamentsFk.tipus }}</td>
+                    <td>{{ visita.metgesFk.nom}}</td>
+                    <td>{{ visita.pacientsFk.nom}}, {{ visita.pacientsFk.cognom}} amb DNI: {{ visita.pacientsFk.dni }}</td>
         		</tr>
 				{% endfor %}
 				</table>
