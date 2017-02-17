@@ -1,6 +1,6 @@
 <?php
 
-namespace FrontBundle\Controller;
+namespace BackBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
@@ -10,6 +10,11 @@ class PacientsController extends Controller
 	{
 		return $this->render('BackBundle:Default:index.html.twig');
 	}
+	public function llistaPacientsAction()
+    {
+    	$pacients = $this->getDoctrine()->getRepository('FrontBundle:Pacients')->findAll();
+        return $this->render('BackBundle:Default:pacients.html.twig',array('pacients' => $pacients));
+    }
 	public function newAction()
 	{
 		$pacient = new Pacient(); 

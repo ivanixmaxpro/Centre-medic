@@ -105,13 +105,58 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
 
         }
 
-        // back_homepage
-        if (rtrim($pathinfo, '/') === '/back') {
-            if (substr($pathinfo, -1) !== '/') {
-                return $this->redirect($pathinfo.'/', 'back_homepage');
+        if (0 === strpos($pathinfo, '/back')) {
+            // centre_medic_back_homepage
+            if (rtrim($pathinfo, '/') === '/back') {
+                if (substr($pathinfo, -1) !== '/') {
+                    return $this->redirect($pathinfo.'/', 'centre_medic_back_homepage');
+                }
+
+                return array (  '_controller' => 'BackBundle\\Controller\\DefaultController::indexAction',  '_route' => 'centre_medic_back_homepage',);
             }
 
-            return array (  '_controller' => 'BackBundle\\Controller\\DefaultController::indexAction',  '_route' => 'back_homepage',);
+            // centre_medic_back_pacients_new
+            if (rtrim($pathinfo, '/') === '/back/new') {
+                if (substr($pathinfo, -1) !== '/') {
+                    return $this->redirect($pathinfo.'/', 'centre_medic_back_pacients_new');
+                }
+
+                return array (  '_controller' => 'BackBundle\\Controller\\PacientsController::newAction',  '_route' => 'centre_medic_back_pacients_new',);
+            }
+
+            // centre_medic_back_pacients_view
+            if (0 === strpos($pathinfo, '/back/view') && preg_match('#^/back/view/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'centre_medic_back_pacients_view')), array (  '_controller' => 'BackBundle\\Controller\\PacientsController::viewAction',));
+            }
+
+            // centre_medic_back_pacients_edit
+            if (0 === strpos($pathinfo, '/back/edit') && preg_match('#^/back/edit/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'centre_medic_back_pacients_edit')), array (  '_controller' => 'BackBundle\\Controller\\PacientsController::editAction',));
+            }
+
+            // centre_medic_back_pacients_delete
+            if (0 === strpos($pathinfo, '/back/delete') && preg_match('#^/back/delete/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'centre_medic_back_pacients_delete')), array (  '_controller' => 'BackBundle\\Controller\\PacientsController::deleteAction',));
+            }
+
+            if (0 === strpos($pathinfo, '/back/llista_')) {
+                // centre_medic_llista_back_pacients
+                if ($pathinfo === '/back/llista_pacients') {
+                    return array (  '_controller' => 'BackBundle\\Controller\\PacientsController::llistaPacientsAction',  '_route' => 'centre_medic_llista_back_pacients',);
+                }
+
+                // centre_medic_llista_back_metges
+                if ($pathinfo === '/back/llista_metges') {
+                    return array (  '_controller' => 'BackBundle\\Controller\\MetgesController::llistaMetgesAction',  '_route' => 'centre_medic_llista_back_metges',);
+                }
+
+                // centre_medic_llista_back_visites
+                if ($pathinfo === '/back/llista_visites') {
+                    return array (  '_controller' => 'BackBundle\\Controller\\VisitesController::llistaVisitesAction',  '_route' => 'centre_medic_llista_back_visites',);
+                }
+
+            }
+
         }
 
         if (0 === strpos($pathinfo, '/front')) {

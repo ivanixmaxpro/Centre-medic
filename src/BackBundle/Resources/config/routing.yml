@@ -1,4 +1,6 @@
-
+centre_medic_back_homepage:
+    path:     /
+    defaults: { _controller: BackBundle:Default:index }
 centre_medic_back_pacients_new:
     path:     /new/
     defaults: { _controller: BackBundle:Pacients:new }
@@ -11,3 +13,12 @@ centre_medic_back_pacients_edit:
 centre_medic_back_pacients_delete:
     path:     /delete/{id}
     defaults: { _controller: BackBundle:Pacients:delete }
+centre_medic_llista_back_pacients:
+    path:     /llista_pacients
+    defaults: { _controller: BackBundle:Pacients:llistaPacients }
+centre_medic_llista_back_metges:
+    path:     /llista_metges
+    defaults: { _controller: BackBundle:Metges:llistaMetges }
+centre_medic_llista_back_visites:
+    path:     /llista_visites
+    defaults: { _controller: BackBundle:Visites:llistaVisites }
