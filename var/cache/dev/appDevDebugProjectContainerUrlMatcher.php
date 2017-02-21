@@ -125,9 +125,9 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
             }
 
             if (0 === strpos($pathinfo, '/front/l')) {
-                // centre_medic_front_login
+                // login
                 if ($pathinfo === '/front/login') {
-                    return array (  '_controller' => 'FrontBundle\\Controller\\DefaultController::loginAction',  '_route' => 'centre_medic_front_login',);
+                    return array (  '_controller' => 'FrontBundle\\Controller\\SecurityController::loginAction',  '_route' => 'login',);
                 }
 
                 if (0 === strpos($pathinfo, '/front/llista_')) {
