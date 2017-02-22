@@ -4,6 +4,11 @@ security:
 
     # http://symfony.com/doc/current/security.html#b-configuring-how-users-are-loaded
     providers:
+        your_db_provider:
+            entity:
+                class: FrontBundle:Usuaris
+                property: apiKey
+
         in_memory:
             memory: ~
 
@@ -19,7 +24,11 @@ security:
 
             # http_basic: ~
             # http://symfony.com/doc/current/security.html#a-configuring-how-your-users-will-authenticate
-
+            
+             guard:
+                authenticators:
+                    - app.token_authenticator
+                    
             form_login: 
                 
                 login_path: login
