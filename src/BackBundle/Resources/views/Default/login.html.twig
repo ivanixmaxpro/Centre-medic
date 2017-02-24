@@ -1,0 +1,36 @@
+{% extends "BackBundle:Default:index.html.twig " %}
+{% block title %}Login{% endblock %}
+{% block page_content %}
+    <!-- Page Content -->
+    <div class="container">
+        <div class="row">
+        <h1>Login</h1>
+            <div class="col-sm-10 col-lg-6 col-md-6">
+            {% if is_granted('ROLE_USER') or is_granted('ROLE_ADMIN') %}
+            <p>Has logejat correctament</p>
+            {{app.user.username}} {{app.user.roles}}
+            {%endif%}
+   
+
+<form action="{{ path('login_check') }}" method="post">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="_username" value="{{ last_username }}" />
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="_password" />
+
+    {#
+        <input type="hidden" name="_target_path" value="/account" />
+    #}
+
+    <button type="submit">login</button>
+</form>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="col-sm-10 col-lg-6 col-md-6">
+        <a href="{{ path('back_user_registration') }}" class="btn btn-info" role="button"> Registrase</a>
+        </div>
+    </div>
+{% endblock %}

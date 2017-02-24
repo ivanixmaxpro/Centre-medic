@@ -59,5 +59,110 @@ class Visites
     private $metgesFk;
 
 
-}
 
+    /**
+     * Set data
+     *
+     * @param \DateTime $data
+     *
+     * @return Visites
+     */
+    public function setData($data)
+    {
+        $this->data = $data;
+
+        return $this;
+    }
+
+    /**
+     * Get data
+     *
+     * @return \DateTime
+     */
+    public function getData()
+    {
+        return $this->data;
+    }
+
+    /**
+     * Get id
+     *
+     * @return integer
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set tractamentsFk
+     *
+     * @param \FrontBundle\Entity\Tractaments $tractamentsFk
+     *
+     * @return Visites
+     */
+    public function setTractamentsFk(\FrontBundle\Entity\Tractaments $tractamentsFk = null)
+    {
+        $this->tractamentsFk = $tractamentsFk;
+
+        return $this;
+    }
+
+    /**
+     * Get tractamentsFk
+     *
+     * @return \FrontBundle\Entity\Tractaments
+     */
+    public function getTractamentsFk()
+    {
+        return $this->tractamentsFk;
+    }
+
+    /**
+     * Set pacientsFk
+     *
+     * @param \FrontBundle\Entity\Pacients $pacientsFk
+     *
+     * @return Visites
+     */
+    public function setPacientsFk(\FrontBundle\Entity\Pacients $pacientsFk = null)
+    {
+        $this->pacientsFk = $pacientsFk;
+
+        return $this;
+    }
+
+    /**
+     * Get pacientsFk
+     *
+     * @return \FrontBundle\Entity\Pacients
+     */
+    public function getPacientsFk()
+    {
+        return $this->pacientsFk;
+    }
+
+    /**
+     * Set metgesFk
+     *
+     * @param \FrontBundle\Entity\Metges $metgesFk
+     *
+     * @return Visites
+     */
+    public function setMetgesFk(\FrontBundle\Entity\Metges $metgesFk = null)
+    {
+        $this->metgesFk = $metgesFk;
+
+        return $this;
+    }
+
+    /**
+     * Get metgesFk
+     *
+     * @return \FrontBundle\Entity\Metges
+     */
+    public function getMetgesFk()
+    {
+        return $this->metgesFk;
+    }
+}

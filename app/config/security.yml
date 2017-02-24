@@ -1,12 +1,14 @@
 # To get started with security, check out the documentation:
 # http://symfony.com/doc/current/security.html
 security:
-
+    encoders:
+        Centremedic\BackBundle\Entity\Usuaris: sha512
     # http://symfony.com/doc/current/security.html#b-configuring-how-users-are-loaded
     providers:
-        in_memory:
-            memory: ~
-
+        our_db_provider:
+            entity:
+                class: BackBundle:User
+                property: username
     firewalls:
         # disables authentication for assets and the profiler, adapt it according to your needs
         dev:
@@ -15,13 +17,22 @@ security:
 
         main:
             anonymous: ~
+            provider: our_db_provider
             # activate different ways to authenticate
 
             # http_basic: ~
             # http://symfony.com/doc/current/security.html#a-configuring-how-your-users-will-authenticate
 
+            
             form_login: 
                 
                 login_path: login
-                check_path: login
+                check_path: login_check
+                default_target_path: back
+            logout:
+                path: logout
+                target: front
+    access_control:
+        - { path: ^/back/register, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/back, roles: ROLE_ADMIN }
             # http://symfony.com/doc/current/cookbook/security/form_login_setup.html

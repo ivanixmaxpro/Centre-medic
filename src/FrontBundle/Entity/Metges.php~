@@ -43,5 +43,86 @@ class Metges
     private $dni;
 
 
-}
 
+    /**
+     * Set nom
+     *
+     * @param string $nom
+     *
+     * @return Metges
+     */
+    public function setNom($nom)
+    {
+        $this->nom = $nom;
+
+        return $this;
+    }
+
+    /**
+     * Get nom
+     *
+     * @return string
+     */
+    public function getNom()
+    {
+        return $this->nom;
+    }
+
+    /**
+     * Set cognom
+     *
+     * @param string $cognom
+     *
+     * @return Metges
+     */
+    public function setCognom($cognom)
+    {
+        $this->cognom = $cognom;
+
+        return $this;
+    }
+
+    /**
+     * Get cognom
+     *
+     * @return string
+     */
+    public function getCognom()
+    {
+        return $this->cognom;
+    }
+
+    /**
+     * Set especialitat
+     *
+     * @param string $especialitat
+     *
+     * @return Metges
+     */
+    public function setEspecialitat($especialitat)
+    {
+        $this->especialitat = $especialitat;
+
+        return $this;
+    }
+
+    /**
+     * Get especialitat
+     *
+     * @return string
+     */
+    public function getEspecialitat()
+    {
+        return $this->especialitat;
+    }
+
+    /**
+     * Get dni
+     *
+     * @return string
+     */
+    public function getDni()
+    {
+        return $this->dni;
+    }
+}

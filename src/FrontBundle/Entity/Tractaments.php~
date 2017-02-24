@@ -29,5 +29,38 @@ class Tractaments
     private $id;
 
 
-}
 
+    /**
+     * Set tipus
+     *
+     * @param string $tipus
+     *
+     * @return Tractaments
+     */
+    public function setTipus($tipus)
+    {
+        $this->tipus = $tipus;
+
+        return $this;
+    }
+
+    /**
+     * Get tipus
+     *
+     * @return string
+     */
+    public function getTipus()
+    {
+        return $this->tipus;
+    }
+
+    /**
+     * Get id
+     *
+     * @return integer
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+}

@@ -9,3 +9,17 @@ front:
 app:
     resource: "@AppBundle/Controller/"
     type:     annotation
+
+back_user_registration:
+    path: /register
+    defaults: { _controller: BackBundle:Registration:Index}
+
+login:
+    path: /login
+    defaults: { _controller: BackBundle:Security:login}
+  
+login_check:
+    path: /login_check
+    
+logout:
+    path: /logout

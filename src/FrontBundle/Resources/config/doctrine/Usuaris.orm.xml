@@ -14,5 +14,10 @@
         <option name="fixed"/>
       </options>
     </field>
+    <field name="roles" type="string" column="roles" length="255" nullable="false">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
   </entity>
 </doctrine-mapping>
