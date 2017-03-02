@@ -467,7 +467,11 @@
                 <tag name="cache.pool" clearer="cache.default_clearer"/>
                 <argument>LM4TRwnjYB</argument>
                 <argument>0</argument>
+<<<<<<< HEAD
                 <argument>DZ4ZNwmIhHgFw8P0ucgSFx</argument>
+=======
+                <argument>iSqZDidil5X+l4dIDGoiaP</argument>
+>>>>>>> master
                 <argument>C:\xampp\htdocs\Centremedic\var\cache\dev/pools</argument>
                 <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
                 <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -635,7 +639,11 @@
           <tag name="monolog.logger" channel="cache"/>
           <argument>hHOADg4rfa</argument>
           <argument>null</argument>
+<<<<<<< HEAD
           <argument>DZ4ZNwmIhHgFw8P0ucgSFx</argument>
+=======
+          <argument>iSqZDidil5X+l4dIDGoiaP</argument>
+>>>>>>> master
           <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
           <factory class="Symfony\Component\PropertyAccess\PropertyAccessor" method="createCache"/>
         </service>
@@ -656,7 +664,11 @@
       <tag name="cache.pool" clearer="cache.default_clearer"/>
       <argument>EcoZL1muVw</argument>
       <argument>0</argument>
+<<<<<<< HEAD
       <argument>DZ4ZNwmIhHgFw8P0ucgSFx</argument>
+=======
+      <argument>iSqZDidil5X+l4dIDGoiaP</argument>
+>>>>>>> master
       <argument>C:\xampp\htdocs\Centremedic\var\cache\dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -666,7 +678,11 @@
       <tag name="cache.pool" clearer="cache.default_clearer"/>
       <argument>k4xg8q2RIA</argument>
       <argument>0</argument>
+<<<<<<< HEAD
       <argument>DZ4ZNwmIhHgFw8P0ucgSFx</argument>
+=======
+      <argument>iSqZDidil5X+l4dIDGoiaP</argument>
+>>>>>>> master
       <argument>C:\xampp\htdocs\Centremedic\var\cache\dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
@@ -1670,7 +1686,11 @@
         </argument>
         <argument type="service">
           <service class="Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider" public="false">
+<<<<<<< HEAD
             <argument>58b0485b4ce7d1.13056438</argument>
+=======
+            <argument>58adb1197501a2.08877376</argument>
+>>>>>>> master
           </service>
         </argument>
       </argument>
@@ -1960,7 +1980,11 @@
         <argument type="service">
           <service class="Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener" public="false">
             <argument type="service" id="security.token_storage"/>
+<<<<<<< HEAD
             <argument>58b0485b4ce7d1.13056438</argument>
+=======
+            <argument>58adb1197501a2.08877376</argument>
+>>>>>>> master
             <argument type="service" id="monolog.logger.security" on-invalid="null"/>
             <argument type="service" id="security.authentication.manager"/>
           </service>
