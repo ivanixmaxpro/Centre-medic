@@ -116,27 +116,63 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
             }
 
             // centre_medic_back_pacients_new
-            if (rtrim($pathinfo, '/') === '/back/new') {
-                if (substr($pathinfo, -1) !== '/') {
-                    return $this->redirect($pathinfo.'/', 'centre_medic_back_pacients_new');
-                }
-
+            if ($pathinfo === '/back/newPacient') {
                 return array (  '_controller' => 'BackBundle\\Controller\\PacientsController::newAction',  '_route' => 'centre_medic_back_pacients_new',);
             }
 
             // centre_medic_back_pacients_view
-            if (0 === strpos($pathinfo, '/back/view') && preg_match('#^/back/view/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+            if (0 === strpos($pathinfo, '/back/viewPacient') && preg_match('#^/back/viewPacient/(?P<dni>[^/]++)$#s', $pathinfo, $matches)) {
                 return $this->mergeDefaults(array_replace($matches, array('_route' => 'centre_medic_back_pacients_view')), array (  '_controller' => 'BackBundle\\Controller\\PacientsController::viewAction',));
             }
 
             // centre_medic_back_pacients_edit
-            if (0 === strpos($pathinfo, '/back/edit') && preg_match('#^/back/edit/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+            if (0 === strpos($pathinfo, '/back/editPacient') && preg_match('#^/back/editPacient/(?P<dni>[^/]++)$#s', $pathinfo, $matches)) {
                 return $this->mergeDefaults(array_replace($matches, array('_route' => 'centre_medic_back_pacients_edit')), array (  '_controller' => 'BackBundle\\Controller\\PacientsController::editAction',));
             }
 
             // centre_medic_back_pacients_delete
-            if (0 === strpos($pathinfo, '/back/delete') && preg_match('#^/back/delete/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+            if (0 === strpos($pathinfo, '/back/deletePacient') && preg_match('#^/back/deletePacient/(?P<dni>[^/]++)$#s', $pathinfo, $matches)) {
                 return $this->mergeDefaults(array_replace($matches, array('_route' => 'centre_medic_back_pacients_delete')), array (  '_controller' => 'BackBundle\\Controller\\PacientsController::deleteAction',));
+            }
+
+            // centre_medic_back_metges_new
+            if ($pathinfo === '/back/newMetge') {
+                return array (  '_controller' => 'BackBundle\\Controller\\MetgesController::newAction',  '_route' => 'centre_medic_back_metges_new',);
+            }
+
+            // centre_medic_back_metges_view
+            if (0 === strpos($pathinfo, '/back/viewMetge') && preg_match('#^/back/viewMetge/(?P<dni>[^/]++)$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'centre_medic_back_metges_view')), array (  '_controller' => 'BackBundle\\Controller\\MetgesController::viewAction',));
+            }
+
+            // centre_medic_back_metges_edit
+            if (0 === strpos($pathinfo, '/back/editMetge') && preg_match('#^/back/editMetge/(?P<dni>[^/]++)$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'centre_medic_back_metges_edit')), array (  '_controller' => 'BackBundle\\Controller\\MetgesController::editAction',));
+            }
+
+            // centre_medic_back_metges_delete
+            if (0 === strpos($pathinfo, '/back/deleteMetge') && preg_match('#^/back/deleteMetge/(?P<dni>[^/]++)$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'centre_medic_back_metges_delete')), array (  '_controller' => 'BackBundle\\Controller\\MetgesController::deleteAction',));
+            }
+
+            // centre_medic_back_visites_new
+            if ($pathinfo === '/back/newVisita') {
+                return array (  '_controller' => 'BackBundle\\Controller\\VisitesController::newAction',  '_route' => 'centre_medic_back_visites_new',);
+            }
+
+            // centre_medic_back_visites_view
+            if (0 === strpos($pathinfo, '/back/viewVisita') && preg_match('#^/back/viewVisita/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'centre_medic_back_visites_view')), array (  '_controller' => 'BackBundle\\Controller\\VisitesController::viewAction',));
+            }
+
+            // centre_medic_back_visites_edit
+            if (0 === strpos($pathinfo, '/back/editVisita') && preg_match('#^/back/editVisita/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'centre_medic_back_visites_edit')), array (  '_controller' => 'BackBundle\\Controller\\VisitesController::editAction',));
+            }
+
+            // centre_medic_back_visites_delete
+            if (0 === strpos($pathinfo, '/back/deleteVisita') && preg_match('#^/back/deleteVisita/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'centre_medic_back_visites_delete')), array (  '_controller' => 'BackBundle\\Controller\\VisitesController::deleteAction',));
             }
 
             if (0 === strpos($pathinfo, '/back/llista_')) {

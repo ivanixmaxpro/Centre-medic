@@ -38,26 +38,22 @@ class appProdProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBundle\R
             }
 
             // centre_medic_back_pacients_new
-            if (rtrim($pathinfo, '/') === '/back/new') {
-                if (substr($pathinfo, -1) !== '/') {
-                    return $this->redirect($pathinfo.'/', 'centre_medic_back_pacients_new');
-                }
-
+            if ($pathinfo === '/back/new') {
                 return array (  '_controller' => 'BackBundle\\Controller\\PacientsController::newAction',  '_route' => 'centre_medic_back_pacients_new',);
             }
 
             // centre_medic_back_pacients_view
-            if (0 === strpos($pathinfo, '/back/view') && preg_match('#^/back/view/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+            if (0 === strpos($pathinfo, '/back/view') && preg_match('#^/back/view/(?P<dni>[^/]++)$#s', $pathinfo, $matches)) {
                 return $this->mergeDefaults(array_replace($matches, array('_route' => 'centre_medic_back_pacients_view')), array (  '_controller' => 'BackBundle\\Controller\\PacientsController::viewAction',));
             }
 
             // centre_medic_back_pacients_edit
-            if (0 === strpos($pathinfo, '/back/edit') && preg_match('#^/back/edit/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+            if (0 === strpos($pathinfo, '/back/edit') && preg_match('#^/back/edit/(?P<dni>[^/]++)$#s', $pathinfo, $matches)) {
                 return $this->mergeDefaults(array_replace($matches, array('_route' => 'centre_medic_back_pacients_edit')), array (  '_controller' => 'BackBundle\\Controller\\PacientsController::editAction',));
             }
 
             // centre_medic_back_pacients_delete
-            if (0 === strpos($pathinfo, '/back/delete') && preg_match('#^/back/delete/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+            if (0 === strpos($pathinfo, '/back/delete') && preg_match('#^/back/delete/(?P<dni>[^/]++)$#s', $pathinfo, $matches)) {
                 return $this->mergeDefaults(array_replace($matches, array('_route' => 'centre_medic_back_pacients_delete')), array (  '_controller' => 'BackBundle\\Controller\\PacientsController::deleteAction',));
             }
 

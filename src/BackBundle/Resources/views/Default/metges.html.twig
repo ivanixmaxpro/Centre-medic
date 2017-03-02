@@ -1,5 +1,5 @@
 {% extends "BackBundle:Default:index.html.twig " %}
-{% block title %}Pacients{% endblock %}
+{% block title %}Metges{% endblock %}
 {% block page_content %}
     <!-- Page Content -->
 	    <div class="container">
@@ -12,16 +12,23 @@
                 <th>Cognom</th>
                 <th>Dni</th>
                 <th>Especialitat</th>
+                <th>Edita</th>
+                <th>Borra</th>
                 {% for metge in metges %}
-                <tr>
-                	<td>{{ metge.nom }}</td>
+                 <tr>
+                    <td>{{ metge.nom }}</td>
                     <td>{{ metge.cognom }}</td>
                     <td>{{ metge.dni|upper }}</td>
                     <td>{{ metge.especialitat }}</td>
-        		</tr>
+                    <td><a href="{{ path('centre_medic_back_metges_edit',{'dni':metge.dni}) }}"><img src="{{ asset('img/edit.png') }}"  alt="Edit" height="32" width="32"> </img></a></td>
+                    <td><a href="{{ path('centre_medic_back_metges_delete',{'dni':metge.dni}) }}"><img src="{{ asset('img/delete.png') }}"   alt="Delete" height="32" width="32"> </img></a></td>
+                </tr>
 				{% endfor %}
 				</table>
             </div>
+             <div class="col-sm-12 col-lg-12 col-md-12">
+        <a href="{{ path('centre_medic_back_metges_new') }}" class="btn btn-info" role="button">Afegir Metges</a>
+    </div>
         </div>
     </div>
 {% endblock %}
