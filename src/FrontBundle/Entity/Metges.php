@@ -125,4 +125,17 @@ class Metges
     {
         return $this->dni;
     }
+     /**
+     * Set cognom
+     *
+     * @param string $cognom
+     *
+     * @return Metges
+     */
+    public function setDni($dni)
+    {
+        $this->dni = $dni;
+
+        return $this;
+    }
 }

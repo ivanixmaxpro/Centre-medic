@@ -5,7 +5,7 @@
       <index name="dni" columns="dni"/>
     </indexes>
     <id name="dni" type="string" column="dni" length="25">
-      <generator strategy="IDENTITY"/>
+      <generator strategy="NONE"/>
     </id>
     <field name="nom" type="string" column="nom" length="25" nullable="false">
       <options>

@@ -37,8 +37,7 @@ class Pacients
      * @var string
      *
      * @ORM\Column(name="dni", type="string", length=25)
-     * @ORM\Id
-     * @ORM\GeneratedValue(strategy="IDENTITY")
+     * @ORM\GeneratedValue(strategy="NONE")
      */
     private $dni;
 
@@ -124,5 +123,18 @@ class Pacients
     public function getDni()
     {
         return $this->dni;
+    }
+    /**
+     * Set dni
+     *
+     * @param string $dni
+     *
+     * @return Pacients
+     */
+    public function setDni($dni)
+    {
+        $this->dni = $dni;
+
+        return $this;
     }
 }
