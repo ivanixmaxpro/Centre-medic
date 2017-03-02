@@ -14,3 +14,4 @@ var/logs/.gitkeep
 !var/SymfonyRequirements.php
 !/vendor/
 !/web/bundles/
+/nbproject/private/
